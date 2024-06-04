@@ -1,0 +1,37 @@
+{
+  "$id": "HistorianTQV",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "additionalProperties": false,
+  "description": "Schema that defines TQV messages from Aveva Historian",
+  "properties": {
+    "Quality": {
+      "description": "a value's quality",
+      "type": "number"
+    },
+    "TagName": {
+      "description": "the name of a tag",
+      "type": "string"
+    },
+    "TimeStampUTC": {
+      "description": "a unix style UTC timestamp i.e. 2023-09-24T13:58:49.797Z",
+      "format": "date-time",
+      "type": "string"
+    },
+    "Value": {
+      "description": "a value, can be numeric or null",
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "vValue": {
+      "description": "a stringified value, can be nulled",
+      "type": [
+        "string",
+        "null"
+      ]
+    }
+  },
+  "title": "HistorianTQV",
+  "type": "object"
+}

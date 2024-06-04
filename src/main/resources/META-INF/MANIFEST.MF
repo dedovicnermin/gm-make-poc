@@ -1,0 +1,1 @@
+Main-Class: io.nermdev.kafka.gmmakepoc.Main
